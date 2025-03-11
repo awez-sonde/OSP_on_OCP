@@ -59,3 +59,17 @@ This architecture represents an OpenShift cluster running OpenStack services, wi
 
 
 <img width="1855" alt="image" src="https://github.com/user-attachments/assets/210266bd-e758-416d-893b-8c476e368e50" />
+
+#### Master Nodes
+
+* Master nodes require just one NIC as they are only connected to one flat OCP network
+
+#### Worker Nodes
+
+* Two NIC's are required here.
+* One for OCP flat network and another for OSP services( Flat + VLAN ) networks
+
+#### Compute Nodes
+
+* Three NIC's are required here
+* One for OCP flat , another for OSP services( Flat +VLAN) and one for external flat network.
