@@ -7,7 +7,7 @@ This repo is about deploying red Hat Openstack services on top of Red Hat Opensh
 
 This architecture represents an OpenShift cluster running OpenStack services, with all components virtualized on a Red Hat Enterprise Linux 9 (RHEL 9) KVM Host.
 
-### Virtualized Infrastructure on RHEL 9 KVM
+#### Virtualized Infrastructure on RHEL 9 KVM
 
 * The entire OpenShift and OpenStack deployment is running as Virtual Machines (VMs) on a RHEL 9 KVM host.
 * The KVM hypervisor provides the underlying compute, storage, and networking resources.
