@@ -73,5 +73,5 @@ This architecture represents an OpenShift cluster running OpenStack services, wi
 
 #### Compute Nodes
 
-* Three NIC's are required here
-* One for OCP flat , another for OSP services( Flat +VLAN) and one for external flat network.
+* Two NIC's are required here
+* One for OSP services( Flat +VLAN) and one for external flat network.
