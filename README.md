@@ -14,3 +14,6 @@ This repo is about deploying red Hat Openstack services on top of Red Hat Opensh
 <img width="1840" alt="image" src="https://github.com/user-attachments/assets/1581b5e4-0b84-409b-8508-03190d8cb6de" />
 
 ### Physical Network Architecture
+
+
+<img width="1855" alt="image" src="https://github.com/user-attachments/assets/210266bd-e758-416d-893b-8c476e368e50" />
