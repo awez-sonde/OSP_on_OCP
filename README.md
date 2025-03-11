@@ -35,7 +35,8 @@ This architecture represents an OpenShift cluster running OpenStack services, wi
 
 
 
-<img width="1840" alt="image" src="https://github.com/user-attachments/assets/1581b5e4-0b84-409b-8508-03190d8cb6de" />
+<img width="1776" alt="image" src="https://github.com/user-attachments/assets/72909811-2666-4b5a-990f-a63a8731304c" />
+
 
 #### Master Nodes 
 
@@ -58,7 +59,8 @@ This architecture represents an OpenShift cluster running OpenStack services, wi
 ### Physical Network Architecture
 
 
-<img width="1855" alt="image" src="https://github.com/user-attachments/assets/210266bd-e758-416d-893b-8c476e368e50" />
+<img width="1833" alt="image" src="https://github.com/user-attachments/assets/1f48f18c-48d6-4965-b621-9132d3074a4c" />
+
 
 #### Master Nodes
 
