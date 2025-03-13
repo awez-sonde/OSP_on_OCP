@@ -3,7 +3,7 @@ kind: Namespace
 metadata:
   name: metallb-system
 
---
+---
 
 apiVersion: operators.coreos.com/v1
 kind: OperatorGroup
@@ -11,7 +11,7 @@ metadata:
   name: metallb-operator
   namespace: metallb-system
 
---
+---
 
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
