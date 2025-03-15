@@ -1,0 +1,68 @@
+apiVersion: nmstate.io/v1
+kind: NodeNetworkConfigurationPolicy
+metadata:
+  name: rhocp1-worker-8-nncp
+spec:
+  desiredState:
+    interfaces:
+    - description: Configuring internalapi vlan interface
+      ipv4:
+        address:
+        - ip: 172.17.0.18
+          prefix-length: 24 
+        enabled: true
+        dhcp: false
+      ipv6:
+        enabled: false
+      name: ens11.20
+      state: up
+      type: vlan
+      vlan:
+        base-iface: ens11
+        id: 20
+    - description: Configuring storage vlan interface
+      ipv4:
+        address:
+        - ip: 172.18.0.18
+          prefix-length: 24 
+        enabled: true
+        dhcp: false
+      ipv6:
+        enabled: false
+      name: ens11.22
+      state: up
+      type: vlan
+      vlan:
+        base-iface: ens11
+        id: 22
+    - description: Configuring tenant vlan interface
+      ipv4:
+        address:
+        - ip: 172.19.0.18
+          prefix-length: 24 
+        enabled: true
+        dhcp: false
+      ipv6:
+        enabled: false
+      name: ens11.21
+      state: up
+      type: vlan
+      vlan:
+        base-iface: ens11
+        id: 21
+    - description: Configuring ctlplane
+      ipv4:
+        address:
+        - ip: 192.168.10.18
+          prefix-length: 24 
+        enabled: true
+        dhcp: false
+      ipv6:
+        enabled: false
+      mtu: 1500
+      name: ens11
+      state: up
+      type: ethernet
+  nodeSelector:
+    kubernetes.io/hostname: rhocp1-worker-8.awezlab.local 
+    node-role.kubernetes.io/worker: ""
