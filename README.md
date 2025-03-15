@@ -87,3 +87,5 @@ This architecture represents an OpenShift cluster running OpenStack services, wi
 | tenant | 21 | 172.19.0.0/24 | 172.19.0.100- <br> 172.19.0.250 | n/a | 172.19.0.30- <br> 172.19.0.70 | 172.19.0.10- <br> 172.19.0.20 |
 | storage | 22 | 172.18.0.0/24 | 172.18.0.100- <br> 172.18.0.250 | n/a | 172.18.0.30- <br> 172.18.0.70 | 172.18.0.10- <br> 172.18.0.20 |
 
+
+
