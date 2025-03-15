@@ -79,5 +79,6 @@ This architecture represents an OpenShift cluster running OpenStack services, wi
 
 ### Network Ranges
 
-| Network Name | VLAN | CIDR | NetConfig <br> allocation range | MetalLB <br> IPAddressPool range | | |
+| Network Name | VLAN | CIDR | NetConfig <br> allocation range | MetalLB <br> IPAddressPool range | net-attach-def <br> ipam range | OCP worker nncp range |
 | -- | -- | -- | -- | -- | -- | -- |
+| ctlplane | n/a | 
