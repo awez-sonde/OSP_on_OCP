@@ -75,3 +75,15 @@ This architecture represents an OpenShift cluster running OpenStack services, wi
 
 * Two NIC's are required here
 * One for OSP services( Flat +VLAN) and one for external flat network.
+
+
+### Network Ranges
+
+|===
+| Network Name | VLAN | CIDR | NetConfig allocation range | MetalLB 
+                                                            test
+
+
+| Row 1, Cell 1 | Row 1, Cell 2 | Row 1, Cell 3
+| Row 2, Cell 1 | Row 2, Cell 2 | Row 2, Cell 3
+|===
