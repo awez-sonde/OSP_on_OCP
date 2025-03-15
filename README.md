@@ -81,4 +81,6 @@ This architecture represents an OpenShift cluster running OpenStack services, wi
 
 | Network Name | VLAN | CIDR | NetConfig <br> allocation range | MetalLB <br> IPAddressPool range | net-attach-def <br> ipam range | OCP worker nncp range |
 | -- | -- | -- | -- | -- | -- | -- |
-| ctlplane | n/a | 
+| ctlplane | n/a | 192.168.10.0/24 | 192.168.10.100 - <br> 192.168.10.250 | 192.168.10.80 - <br> 192.168.10.90 | 192.168.10.30 - <br> 192.168.10.70 | 192.168.10.10 - <br> 192.168.10.20 |
+| external | n/a | 10.0.0.0/24 | 10.0.0.100 - <br> 10.0.0.250 | n/a | n/a | n/a |
+| internalapi | 20 | 172.17.0.0/24 | 172.17.0.100 - <br> 172.17.0.250 |  172.17.0.80 - <br> 172.17.0.90 | 172.17.0.30 - <br> 172.17.0.70 | 172.17.0.10 - <br> 172.17.0.20 |
