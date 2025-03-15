@@ -89,7 +89,3 @@ This architecture represents an OpenShift cluster running OpenStack services, wi
 
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 4a48d9c (updated readme)
