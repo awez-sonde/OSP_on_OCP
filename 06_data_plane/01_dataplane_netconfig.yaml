@@ -1,0 +1,63 @@
+apiVersion: network.openstack.org/v1beta1
+kind: NetConfig
+metadata:
+  name: openstacknetconfig
+  namespace: openstack
+spec:
+  networks:
+  - name: ctlplane
+    dnsDomain: ctlplane.awezlab.local
+    subnets:
+    - name: subnet1
+      allocationRanges:
+      - end: 192.168.10.120
+        start: 192.168.10.100
+      - end: 192.168.10.200
+        start: 192.168.10.150
+      cidr: 192.168.10.0/24
+      gateway: 192.168.10.1
+  - name: internalapi 
+    dnsDomain: internalapi.awezlab.local
+    subnets:
+    - name: subnet1
+      allocationRanges:
+      - end: 172.17.0.250
+        start: 172.17.0.100
+      excludeAddresses:
+      - 172.17.0.10
+      - 172.17.0.12
+      cidr: 172.17.0.0/24
+      vlan: 20
+  - name: tenant
+    dnsDomain: tenant.awezlab.local
+    subnets:
+    - name: subnet1
+      allocationRanges:
+      - end: 172.19.0.250
+        start: 172.19.0.100
+      excludeAddresses:
+      - 172.19.0.10
+      - 172.19.0.12
+      cidr: 172.19.0.0/24
+      vlan: 21
+  - name: storage
+    dnsDomain: storage.awezlab.local
+    subnets:
+    - name: subnet1
+      allocationRanges:
+      - end: 172.18.0.250
+        start: 172.18.0.100
+      excludeAddresses:
+      - 172.18.0.10
+      - 172.18.0.12
+      cidr: 172.18.0.0/24
+      vlan: 22
+  - name: external
+    dnsDomain: external.awezlab.local
+    subnets:
+    - name: subnet1
+      allocationRanges:
+      - end: 10.0.0.90
+        start: 10.0.0.61
+      cidr: 10.0.0.0/24
+      gateway: 10.0.0.1
