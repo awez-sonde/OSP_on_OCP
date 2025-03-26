@@ -8,11 +8,11 @@ spec:
  resources:
    mds:
      limits:
-       cpu: "3"
-       memory: "8Gi"
+       cpu: "2"
+       memory: "4Gi"
      requests:
-       cpu: "3"
-       memory: "8Gi"
+       cpu: "2"
+       memory: "4Gi"
  monDataDirHostPath: /var/lib/rook
  storageDeviceSets:
  - count: 2  # <-- Modify count to desired value. For each set of 3 disks increment the count by 1.

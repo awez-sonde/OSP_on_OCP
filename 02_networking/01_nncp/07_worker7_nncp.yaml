@@ -1,7 +1,7 @@
 apiVersion: nmstate.io/v1
 kind: NodeNetworkConfigurationPolicy
 metadata:
-  name: rhocp1-worker-7-nncp
+  name: ocp-worker-7-nncp
 spec:
   desiredState:
     interfaces:
@@ -64,5 +64,5 @@ spec:
       state: up
       type: ethernet
   nodeSelector:
-    kubernetes.io/hostname: rhocp1-worker-7.awezlab.local 
+    kubernetes.io/hostname: ocp-worker-7.awezlab.local 
     node-role.kubernetes.io/worker: ""
